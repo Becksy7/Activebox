@@ -1,0 +1,50 @@
+.header {
+  height: @header-height;
+  background: url("../images/header_bg.png") no-repeat 50% 50% @header-bg;
+  background-size: cover;
+  padding: 0 @main-padding-vertical;
+
+  .nav {
+    .size(100%, @navbar-height);
+    padding-top: 30px;
+    > li {
+      > a {
+        .bg-variant(transparent);
+        color: #cbccd3;
+        font-family: 'Raleway', sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        &:hover, &:focus, &:active {
+          color: #2e6da4;
+          .bg-variant(transparent);
+        }
+      }
+    }
+  }
+
+  .header-caption {
+    h1 {
+      font-family: "Open Sans";
+      font-size: 65px;
+      line-height: 71px;
+      letter-spacing: 0;
+      .text-uppercase;
+      .text-center;
+    }
+    h2 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 22px;
+      line-height: 33px;
+      letter-spacing: 0;
+      color: #cbccd3;
+      .text-center;
+      text-transform: none;
+    }
+  }
+  .btn {
+    margin-top: 100px;
+    .size (200px, 45px);
+    border-radius: 0;
+    text-transform: uppercase;
+  }
+}

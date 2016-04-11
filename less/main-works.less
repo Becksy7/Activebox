@@ -1,0 +1,66 @@
+.content-block(@content-block-bg-image) {
+  padding: 0;
+  margin: 0;
+  width: 25%;
+  height: 350px;
+  border: 1px solid #FFFFFF;
+  background: url(@content-block-bg-image) no-repeat 50% 50% #FFFFFF;
+  background-size: cover;
+  float: left;
+  .work_text-box {
+    padding-top: 30%;
+    .size(100%, 100%);
+    .text-center;
+    visibility: hidden;
+    font-family: "Raleway";
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+    p {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    span{
+      font-weight: normal;
+      text-transform: capitalize;
+    }
+  }
+  &:hover {
+    .work_text-box {
+      visibility: visible;
+      background: rgba(232, 69, 69, .7);
+    }
+  }
+}
+
+.work_1 {
+  .content-block("../images/work1.png");
+}
+
+.work_2 {
+  .content-block("../images/work2.png");
+}
+
+.work_3 {
+  .content-block("../images/work3.png");
+}
+
+.work_4 {
+  .content-block("../images/work4.png");
+}
+
+.work_5 {
+  .content-block("../images/work5.png");
+}
+
+.work_6 {
+  .content-block("../images/work6.png");
+}
+
+.work_7 {
+  .content-block("../images/work7.png");
+}
+
+.work_8 {
+  .content-block("../images/work8.png");
+}
